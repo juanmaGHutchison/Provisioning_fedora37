@@ -1,0 +1,24 @@
+---
+- name: Download VSCode from official website
+  get_url:
+    url: "https://go.microsoft.com/fwlink/?LinkID=760867"
+    dest: "{{ VSCODE_RPM }}"
+
+- name: Install VSCode ({{ VSCODE_RPM }})
+  dnf:
+    name:
+      - "{{ VSCODE_RPM }}"
+    state: present
+  become: yes
+
+- name: Install VSCode plugins
+  shell: |
+    code --install-extension {{ item }}
+  with_items:
+    - 'platformio.platformio-ide'
+    - 'ms-vscode.cpptools'
+    - 'ms-vscode-remote.remote-ssh'
+    - 'dracula-theme.theme-dracula'
+    - 'vscode-icons-team.vscode-icons'
+    - 'Equinusocio.vsc-material-theme'
+    

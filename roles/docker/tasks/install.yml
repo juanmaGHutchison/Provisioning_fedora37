@@ -1,0 +1,16 @@
+---
+
+- name: Enable Docker repository
+  yum_repository:
+    name: docker
+    description: "Docker for RHEL-like systems"
+    baseurl: https://download.docker.com/linux/fedora/37/x86_64/stable/
+  become: yes
+
+- name: Install Docker-CE and Docker Compose
+  dnf:
+    name: 
+      - docker-ce
+      - docker-compose
+    disable_gpg_check: yes
+  become: yes

@@ -1,0 +1,12 @@
+---
+# WARNING: After running these tasks, restart your user session
+- name: Get current username
+  set_fact:
+    username: "{{ lookup('env', 'USER') }}"
+
+- name: Add user {{ username }} to docker group. Don't forget to restart the session
+  user:
+    name: "{{ username }}"
+    groups: docker
+    append: yes
+  become: yes

@@ -1,0 +1,14 @@
+---
+- name: install ZSH shell
+  dnf:
+    name:
+      - zsh
+  become: yes
+
+- name: install oh-my-zsh
+  username: {{ lookup ('env', 'USER') }}
+  oh_my_zsh:
+    theme: robbyrussell
+    plugins:
+      - git
+    update_mode: auto

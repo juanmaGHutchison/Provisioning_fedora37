@@ -1,0 +1,8 @@
+- name: Automation for Duplo.AI to generate Wordpress entries (DEV WORKSET)
+  hosts: localdevserver
+  roles:
+    - packages
+    - ohmyzsh
+    - vscode
+    - github
+    - docker

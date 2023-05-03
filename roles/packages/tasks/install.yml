@@ -1,0 +1,8 @@
+---
+
+- name: Install DNF os packages for Fedora 37
+  dnf:
+    name:
+      - 'tmux'
+      - 'tree'
+  become: yes

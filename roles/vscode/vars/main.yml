@@ -1,0 +1,3 @@
+---
+# vars file for vscode
+VSCODE_RPM: '/tmp/vscode.rpm'
