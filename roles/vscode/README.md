@@ -2,7 +2,6 @@ VSCode
 =========
 
 Installs VSCode from the official website and installs the following plugins:
-- PlatformIO
 - Remote SSH development
 - Other plugins to customize your VSCode environment
 

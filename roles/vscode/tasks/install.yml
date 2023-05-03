@@ -15,8 +15,6 @@
   shell: |
     code --install-extension {{ item }}
   with_items:
-    - 'platformio.platformio-ide'
-    - 'ms-vscode.cpptools'
     - 'ms-vscode-remote.remote-ssh'
     - 'dracula-theme.theme-dracula'
     - 'vscode-icons-team.vscode-icons'
