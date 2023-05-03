@@ -1,6 +1,0 @@
-- name: Install Git and Github packages
-  dnf:
-    name:
-      - git
-      - gh
-  become: yes
