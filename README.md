@@ -5,7 +5,7 @@ Install manually the following packages:
 - ansible
 - sshpass
 
-Set the hosts file. By default it is prepared to work with a user named 'usuario' with such password. This user and password shall match with the target system user's one.
+Set the hosts file. By default it is prepared to work with a user named 'usuario' with such password. This user and password shall match with the target system's one.
 
 Configure your playbook as you like.
 
