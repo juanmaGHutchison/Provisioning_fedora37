@@ -1,4 +1,4 @@
-- name: Automation for Duplo.AI to generate Wordpress entries (DEV WORKSET)
+- name: Description of your playbook's commitment
   hosts: localdevserver
   roles:
     - packages
