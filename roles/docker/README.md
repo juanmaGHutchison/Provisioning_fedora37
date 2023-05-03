@@ -21,3 +21,4 @@ Author Information
 ------------------
 
 Restart user session when installed if not, docker group will not be applied to the current user.
+Docker will launch on startup.
