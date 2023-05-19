@@ -7,4 +7,5 @@
       - 'tree'
       - 'git'
       - 'gh'
+      - 'xorg-x11-xauth'
   become: yes
